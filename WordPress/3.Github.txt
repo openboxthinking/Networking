@@ -1,0 +1,32 @@
+# Git vs GitHub
+
+Git is already installed. Now let's set up GitHub.
+
+Step 1 — Create a GitHub Account
+Go to github.com and sign up with your email. It's free.
+
+Step 2 — Connect your Ubuntu Git to GitHub
+GitHub no longer accepts passwords. You need an SSH key. This is how real developers connect.
+Generate SSH key:
+bash
+ssh-keygen -t ed25519 -C "youremail@gmail.com"
+Press Enter for all prompts (default location, no passphrase)
+Copy your SSH key:
+bash
+cat ~/.ssh/id_ed25519.pub
+Copy the entire output.
+
+Step 3 — Add SSH Key to GitHub
+Go to github.com
+Click your profile picture → Settings
+Left sidebar → SSH and GPG keys
+Click New SSH key
+Paste your key → Click Add SSH key
+
+Step 4 — Test the Connection
+bash
+ssh -T git@github.com
+You should see:
+Hi yourusername! You've successfully authenticated.
+
+That's it. Your Ubuntu is now connected to GitHub.
