@@ -9,3 +9,19 @@ sudo apt install git
 ```
 
 **Explanation:** This command installs Git from Ubuntu's software repositories using administrator privileges.
+
+
+
+
+
+## GitHub
+
+GitHub is a cloud-based platform used to store, manage, and share Git repositories. It allows developers to back up their projects, track changes, and collaborate with others.
+
+To verify that Git has been installed successfully, open the terminal and run the following command:
+
+```bash id="k7v2m4"
+git --version
+```
+
+**Explanation:** This command displays the installed Git version on the system.
