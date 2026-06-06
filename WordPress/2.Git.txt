@@ -1,27 +1,30 @@
-## Installing Git
+#INSTALLATION OF GIT IN Ubuntu
 
-Git is a version control system used to track changes in files and manage different versions of a project. It helps developers save their work, collaborate with others, and maintain a history of project changes.
+Step 1 — Update your system first
+bash      
+sudo apt update
 
-To install Git on Ubuntu, open the terminal and run the following command:
-
-```bash
+Step 2 — Install Git
+bash
 sudo apt install git
-```
-
-**Explanation:** This command installs Git from Ubuntu's software repositories using administrator privileges.
 
 
-
-
-
-## GitHub
-
-GitHub is a cloud-based platform used to store, manage, and share Git repositories. It allows developers to back up their projects, track changes, and collaborate with others.
-
-To verify that Git has been installed successfully, open the terminal and run the following command:
-
-```bash id="k7v2m4"
+Step 3 — Verify installation
+bash
 git --version
-```
 
-**Explanation:** This command displays the installed Git version on the system.
+You should see something like:
+git version 2.34.1
+
+Step 4 — Configure Git (Important — do this right after install)
+bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@gmail.com"
+
+Replace with your actual name and email. This is used to track your commits.
+
+Step 5 — Confirm your config
+bash
+git config --list
+
+That's it. Git is installed and ready.
