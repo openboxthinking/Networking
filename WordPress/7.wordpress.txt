@@ -1,0 +1,31 @@
+#Now let's install WordPress.
+
+Step 1 — Create a MySQL Database for WordPress
+bash
+sudo mysql
+Then run these commands inside MySQL:
+sqlCREATE DATABASE wordpress;
+CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'yourpassword';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+Replace yourpassword with a strong password. Remember this password.
+
+Step 2 — Download WordPress
+bash
+cd /tmp
+wget https://wordpress.org/latest.tar.gz
+
+Step 3 — Extract and move WordPress
+bash
+tar -xvzf latest.tar.gz
+sudo mv wordpress /var/www/html/
+
+Step 4 — Set correct permissions
+bash
+sudo chown -R www-data:www-data /var/www/html/wordpress
+sudo chmod -R 755 /var/www/html/wordpress
+
+Now open browser and go to:
+http://localhost/wordpress
+You should see the WordPress installation page.
