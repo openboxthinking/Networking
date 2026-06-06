@@ -1,0 +1,26 @@
+#et's install PHP now.
+
+Step 1 — Install PHP and required extensions
+bash
+sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
+These extensions are specifically needed for WordPress. Don't skip them.
+
+Step 2 — Verify PHP installed
+bash
+php -v
+You should see something like:
+PHP 8.1.x (cli)
+
+Step 3 — Restart Apache
+bash
+sudo systemctl restart apache2
+
+Step 4 — Test PHP is working with Apache
+bash
+sudo nano /var/www/html/test.php
+Type this inside the file:
+php<?php phpinfo(); ?>
+Press Ctrl+X → Y → Enter to save.
+Now open browser and go to:
+http://localhost/test.php
+You should see a big purple PHP info page.
