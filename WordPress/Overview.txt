@@ -1,0 +1,10 @@
+# Overview
+
+In this project, we will create a website using WordPress on an Ubuntu operating system. 
+To run WordPress, we will set up a LAMP stack, which includes Linux (Ubuntu), Apache, MySQL, and PHP. 
+Apache will act as the web server, MySQL will store the website data, and PHP will process the WordPress application.
+
+The purpose of this project is to learn how a website is developed and managed using WordPress in a local development environment. 
+By completing this project, beginners will gain practical experience in installing and configuring the LAMP stack, setting up WordPress, and creating and managing website content.
+
+This project is designed for educational purposes and provides a simple introduction to web development, database management, and website administration using open-source technologies.
