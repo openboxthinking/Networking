@@ -1,0 +1,11 @@
+## Installing Git
+
+Git is a version control system used to track changes in files and manage different versions of a project. It helps developers save their work, collaborate with others, and maintain a history of project changes.
+
+To install Git on Ubuntu, open the terminal and run the following command:
+
+```bash
+sudo apt install git
+```
+
+**Explanation:** This command installs Git from Ubuntu's software repositories using administrator privileges.
