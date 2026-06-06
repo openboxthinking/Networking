@@ -1,0 +1,32 @@
+#Let's install MySQL now.
+
+Step 1 — Install MySQL
+bash   
+sudo apt install mysql-server
+
+Step 2 — Start MySQL
+bash
+sudo systemctl start mysql
+sudo systemctl enable mysql
+
+Step 3 — Check Status
+bash
+sudo systemctl status mysql
+
+Step 4 — Secure your MySQL installation
+bash
+sudo mysql_secure_installation
+This will ask you some questions:
+
+Validate password plugin → type n and press Enter
+Remove anonymous users → type y
+Disallow root login remotely → type y
+Remove test database → type y
+Reload privilege tables → type y
+
+Step 5 — Test MySQL login
+bash
+sudo mysql
+You should see:
+mysql>
+Type exit to come out.
