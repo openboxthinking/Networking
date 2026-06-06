@@ -1,0 +1,29 @@
+#Let's complete the WordPress installation.
+
+Step 1 — Language
+
+Select English (or your preferred language)
+Click Continue
+
+
+Step 2 — Database Details
+Fill in exactly like this:
+FieldValueDatabase NamewordpressUsernamewpuserPasswordyourpassword (what you set earlier)Database HostlocalhostTable Prefixwp_
+Click Submit
+
+Step 3 — Run the Installation
+
+Click Run the installation
+
+
+Step 4 — Site Information
+Fill in:
+FieldValueSite TitleAnything you wantUsernameYour admin usernamePasswordStrong password (save this!)EmailYour email
+
+Uncheck Search engine visibility for now
+Click Install WordPress
+
+
+Step 5 — Login
+After installation click Log In and enter your admin credentials.
+You should see the WordPress Dashboard!
