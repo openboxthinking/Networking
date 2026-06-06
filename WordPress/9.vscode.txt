@@ -1,0 +1,11 @@
+#Let's install VS Code.
+bash
+sudo snap install code --classic
+That's it. One command.
+
+Verify it installed:
+bash
+code --version
+Open VS Code:
+bash
+code
