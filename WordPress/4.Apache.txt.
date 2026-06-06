@@ -1,0 +1,28 @@
+#Apache installation
+
+Step 1 — Install Apache
+bashsudo apt update
+sudo apt install apache2
+
+Step 2 — Start Apache
+bashsudo systemctl start apache2
+Enable it to start automatically on boot:
+bashsudo systemctl enable apache2
+
+Step 3 — Verify Apache is Running
+bashsudo systemctl status apache2
+You should see:
+Active: active (running)
+
+Step 4 — Test in Browser
+Open your browser and type:
+http://localhost
+You should see Apache2 Ubuntu Default Page — a page that says "It works!"
+
+If you see that page — Apache is successfully installed.
+
+Useful Apache Commands to Remember
+bashsudo systemctl start apache2      # Start
+sudo systemctl stop apache2       # Stop
+sudo systemctl restart apache2    # Restart
+sudo systemctl status apache2     # Check status
